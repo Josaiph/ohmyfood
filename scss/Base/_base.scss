@@ -12,6 +12,9 @@ li {
 
 .section {
     padding: $layout-margin $layout-margin/3;
+    +.section {
+        padding-bottom: 0px;
+    }
     &--color {
         background: $color-neutral-light;
     }
@@ -22,8 +25,4 @@ li {
         margin-top: 0px;
         margin-bottom: 2rem;
     }
-}
-
-img {
-    max-width: 300px;
 }
