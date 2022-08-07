@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap'); /* Importation Google Fonts Roboto  et Shrikhand */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap'); /* Importation Google Fonts Roboto  et Shrikhand */
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: $colour-black;
+    color: $color-black;
     font-size: 1rem;
 }
 
 h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.title-page {
     font-family: 'Shrikhand', cursive;
 }
 

@@ -1,8 +1,23 @@
 .banner {
-    background: $colour-neutral;
+    background: $color-neutral;
     text-align: center;
     padding: 10px;
     &__picto {
         margin-right: 10px;
     }
+}
+
+.cover {
+    background: $color-neutral-light;
+    padding: 40px 70px;
+    text-align: center;
+    .cover-title {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .cover-desc {
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+    
 }

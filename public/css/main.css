@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -321,6 +321,10 @@ template {
           box-sizing: border-box;
 }
 
+img {
+  max-width: 300px;
+}
+
 /* Importation Google Fonts Roboto  et Shrikhand */
 body {
   font-family: "Roboto", sans-serif;
@@ -329,6 +333,12 @@ body {
 }
 
 h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title-page {
   font-family: "Shrikhand", cursive;
 }
 
@@ -338,6 +348,23 @@ textarea {
 
 button {
   font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  padding: 0.9rem 1.8rem;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  cursor: pointer;
+  border: none;
+  border-radius: 45px;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  background: #9356DC;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .header {
@@ -370,4 +397,18 @@ button {
 }
 .banner__picto {
   margin-right: 10px;
+}
+
+.cover {
+  background: #f2f2f2;
+  padding: 40px 70px;
+  text-align: center;
+}
+.cover .cover-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.cover .cover-desc {
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
