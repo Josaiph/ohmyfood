@@ -1,8 +1,8 @@
 @import "./vendors/normalize";
 
 @import "./utils/variables";
-//@import "./utils/functions";
-//@import "./utils/mixins";
+@import "./utils/functions";
+@import "./utils/mixins";
 //@import "./utils/extensions";
 
 @import "./base/base";
@@ -16,6 +16,6 @@
 //@import "./layout/form";
 
 
-//@import "./pages/work";
+@import "./pages/home";
 //@import "./pages/about";
 //@import "./pages/project";
