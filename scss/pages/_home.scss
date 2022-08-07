@@ -8,16 +8,52 @@
 }
 
 .cover {
-    background: $color-neutral-light;
-    padding: 40px 70px;
-    text-align: center;
-    .cover-title {
-        margin-top: 0px;
-        margin-bottom: 20px;
-    }
     .cover-desc {
         line-height: 1.7;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
-    
+}
+
+
+.how-it-works {
+    .steps {
+        .step {
+            padding: 1.5rem 1.5rem 1.5rem 0;
+            background: $color-neutral-light;
+            border-radius: 1rem;
+            margin: 0 0 2rem 1rem;
+            @include box-shadow;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+                background: lighten($color-primary, 30%);
+                .picto {
+                    color: $color-primary;
+                }
+            }
+            .number {
+            
+                $size: 25px; // Taille des puces
+
+                display: inline-block;
+                width: $size;
+                height: $size;
+                text-align: center;
+                font-size:  $size/1.8;
+                line-height: $size;
+                color: $color-white;
+                position: relative;
+                left: -$size/2;
+                background: $color-primary;
+                border-radius: 45px;
+            }
+            .picto {
+                margin: 0 1.5rem 0 0.5rem;
+                font-size: 20px;
+            }
+        }
+    }
 }

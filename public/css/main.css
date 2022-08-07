@@ -321,6 +321,24 @@ template {
           box-sizing: border-box;
 }
 
+li {
+  list-style-type: none;
+}
+
+.section {
+  padding: 6rem 2rem;
+}
+.section--color {
+  background: #f2f2f2;
+}
+.section--text-center {
+  text-align: center;
+}
+.section .title {
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
 img {
   max-width: 300px;
 }
@@ -332,9 +350,9 @@ body {
   font-size: 1rem;
 }
 
-h1 {
+h1, h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -358,13 +376,13 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 45px;
-  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
   background: #9356DC;
-  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .header {
@@ -389,6 +407,9 @@ button {
   font-size: 20px;
   cursor: pointer;
 }
+.header__nav:hover {
+  color: #9356DC;
+}
 
 .banner {
   background: #e5e5e5;
@@ -399,16 +420,51 @@ button {
   margin-right: 10px;
 }
 
-.cover {
-  background: #f2f2f2;
-  padding: 40px 70px;
-  text-align: center;
-}
-.cover .cover-title {
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
 .cover .cover-desc {
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+.how-it-works .steps .step {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  background: #f2f2f2;
+  border-radius: 1rem;
+  margin: 0 0 2rem 1rem;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.how-it-works .steps .step:hover {
+  background: #e4d5f6;
+}
+.how-it-works .steps .step:hover .picto {
+  color: #9356DC;
+}
+.how-it-works .steps .step .number {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-size: 13.8888888889px;
+  line-height: 25px;
+  color: #fff;
+  position: relative;
+  left: -12.5px;
+  background: #9356DC;
+  border-radius: 45px;
+}
+.how-it-works .steps .step .picto {
+  margin: 0 1.5rem 0 0.5rem;
+  font-size: 20px;
 }

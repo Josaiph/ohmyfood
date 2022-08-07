@@ -6,6 +6,24 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style-type: none;
+}
+
+.section {
+    padding: $layout-margin $layout-margin/3;
+    &--color {
+        background: $color-neutral-light;
+    }
+    &--text-center {
+        text-align: center;
+    }
+    .title {
+        margin-top: 0px;
+        margin-bottom: 2rem;
+    }
+}
+
 img {
     max-width: 300px;
 }
