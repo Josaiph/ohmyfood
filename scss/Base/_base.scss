@@ -1,3 +1,5 @@
+@use "sass:math";
+
 *,
 *::after,
 *::before {
@@ -11,7 +13,7 @@ li {
 }
 
 .section {
-    padding: $layout-margin $layout-margin/3;
+    padding: $layout-margin calc($layout-margin / 3);
     +.section {
         padding-bottom: 0px;
     }

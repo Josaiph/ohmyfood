@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .banner {
     background: $color-neutral;
     text-align: center;
@@ -17,6 +19,11 @@
 
 .how-it-works {
     .steps {
+        @include desktop-only{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
         .step {
             padding: 1.5rem 1.5rem 1.5rem 0;
             background: $color-neutral-light;
@@ -28,6 +35,9 @@
             align-items: center;
             font-weight: bold;
             cursor: pointer;
+            @include desktop-only{
+                width: 30%;
+            }
             &:hover {
                 background: lighten($color-primary, 30%);
                 .picto {
@@ -35,18 +45,18 @@
                 }
             }
             .number {
-            
-                $size: 25px; // Taille des puces
+
+                $size:25px; // Taille des puces numérotées
 
                 display: inline-block;
-                width: $size;
-                height: $size;
+                width: 25px;
+                height: 25px;
                 text-align: center;
-                font-size:  $size/1.8;
+                font-size:  calc($size / 1.8);
                 line-height: $size;
                 color: $color-white;
                 position: relative;
-                left: -$size/2;
+                left: - calc($size / 2);
                 background: $color-primary;
                 border-radius: 45px;
             }
@@ -58,45 +68,65 @@
     }
 }
 
-.restaurant-prev {
-    position: relative;
-    background: $color-white;
-    border-radius: 1rem;
-    @include box-shadow;
-    margin-bottom: 3rem;
-    cursor: pointer;
-    .chip {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        padding: 7px 15px;
-        font-size: 12px;
-        font-weight: 500;
-        border-radius: 2px;
-        color: darken($color-tertiary, 40%);
-        background: $color-tertiary;
+.restaurants{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mobile-only{
+        display:block;
     }
-    img {
-        width: 100%;
-        height: 200px;
-        -o-object-fit: cover;
-           object-fit: cover;
-        border-radius: 1rem 1rem 0 0;
-    }
-    &:hover {
-        @include box-shadow (rgba($color-black, .3));        
-    }
-    .restaurant-desc {
-        padding: 15px;
+    .restaurant-prev {
         position: relative;
-        h3 {
-            margin-bottom: 5px;
+        background: $color-white;
+        border-radius: 1rem;
+        @include box-shadow;
+        margin-bottom: 3rem;
+        cursor: pointer;
+        @include tablette-only{
+            width: 45%;
         }
-        .fav {
+        @include desktop-only{
+            width: 22%;
+        }
+        a {
+            text-decoration: none;
+            color: $color-black;
+        }
+        .chip {
             position: absolute;
-            font-size: 25px;
-            right: 15px;
-            top: 15px;
+            top: 10px;
+            right: 10px;
+            padding: 7px 15px;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 2px;
+            color: darken($color-tertiary, 40%);
+            background: $color-tertiary;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0;
+        }
+        &:hover {
+            @include box-shadow (rgba($color-black, .3));        
+        }
+        .restaurant-desc {
+            padding: 15px;
+            position: relative;
+            h3 {
+                margin-bottom: 5px;
+            }
+            .fav {
+                position: absolute;
+                font-size: 25px;
+                right: 15px;
+                top: 15px;
+                color: linear-gradient(to bottom right, $color-secondary, $color-primary);
+            }
         }
     }
 }

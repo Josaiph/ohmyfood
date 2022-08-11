@@ -1,6 +1,7 @@
 $color-primary: #9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary: #99E2D0;
+$color-quaternary : #2c2c2c;
 $color-neutral: #e5e5e5;
 $color-neutral-light: #f2f2f2;
 $color-black: #000;
@@ -8,3 +9,8 @@ $color-white: #fff;
 
 $layout-margin : 6rem;
 $gutter: $layout-margin * .15;
+
+$breakpoints: (
+    mobile: 599px,
+    desktop: 1199px
+);
