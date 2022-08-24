@@ -51,7 +51,11 @@
                 position: absolute;
                 top: 0px;
                 right: 0px;
-                color: $color-secondary;
+                color: transparent;
+                -webkit-background-clip: text;
+                        background-clip: text;
+                background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
+                
                 opacity: 0;
             }
             &:hover {
