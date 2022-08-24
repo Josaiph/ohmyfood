@@ -126,6 +126,19 @@
                 right: 15px;
                 top: 15px;
                 color: linear-gradient(to bottom right, $color-secondary, $color-primary);
+                .selected {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    color: $color-secondary;
+                    opacity: 0;
+                }
+                &:hover {
+                    .selected {
+                        -webkit-animation: fav 300ms both;
+                                animation: fav 300ms both;
+                    }
+                }
             }
         }
     }

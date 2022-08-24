@@ -6,111 +6,152 @@
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="public/css/main.min.css"/>
         <script src="https://kit.fontawesome.com/b711bdb4d4.js" crossorigin="anonymous"></script> <!-- Ajout de FontAwesome -->
+        <title>Nom du restaurant</title>
     </head>
     <body>
 
         <header class="header"> <!-- bar de navigation -->
+            <a class="header__nav" href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
             <img src="./images/logo/ohmyfood.png" alt="logo OhMyFood" srcset="./images/logo/ohmyfood@2x.svg"/>
         </header>
 
-        <main>
+        <main class="container-menu">
 
-            <div class="banner"> <!-- Localisation -->
-                <p>
-                    <i class="fa-solid fa-location-dot banner__picto"></i>
-                    Paris, Belleville
-                </p>
-            </div>
+            <section class="section cover-image"> <!-- Nom du restaurant -->
+                <div class="background-title">
+                    <p class="fav"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart selected"></i></p>
+                    <h1 class="title-page">
+                        À la française
+                    </h1>
+                </div>
+            </section>
 
-            <section class="section section--color section--text-center cover"> <!-- Recherche -->
-                <h1 class="title">
-                    Réservez le menu qui vous convient
-                </h1>
-                <p class="cover-desc">
-                    Découvrez des restaurants d'exception sélectionnés par nos soins.
-                </p>
+            <section class="section--color menu"> <!-- Menu du restaurant -->
+                <h2 class="section-title">
+                    Entrées
+                </h2>
+                <div class="underline"></div>
+                <article class="produits">
+                    <div class="produit produit--1">
+                        <div class="produit_desc">
+                            <h3>Tratare de poulpe acidulé</h3>
+                            <p>Aux zests d'orange</p>
+                            <p class="price">25€</p>
+                        </div>
+                        <a class="btn-produit">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </a>
+                    </div>
+                    <div class="produit produit--2">
+                        <div class="produit_desc">
+                            <h3>Velouté de légumes d'antan</h3>
+                            <p>carottes, panais, topinambours</p>
+                            <p class="price">35€</p>
+                        </div>
+                        <a class="btn-produit">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </a>
+                    </div>
+                    <div class="produit produit--3">
+                        <div class="produit_desc">
+                            <h3>Soupe à l'oignon</h3>
+                            <p>revisitée</p>
+                            <p class="price">20€</p>
+                        </div>
+                        <a class="btn-produit">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+
+            <section class="section--color menu"> <!-- Menu du restaurant -->
+                <h2 class="section-title">
+                    Plats
+                </h2>
+                <div class="underline"></div>
+                <article class="produits">
+                    <div class="produit">
+                        <div class="produit_desc">
+                            <h3>Coquilles Saint-Jacques</h3>
+                            <p>Accompagnées d'une purée de panais</p>
+                            <p class="price">40€</p>
+                        </div>
+                        <a class="btn-produit">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </a>
+                    </div>
+                    <div class="produit">
+                        <div class="produit_desc">
+                            <h3>Magret de canard</h3>
+                            <p>Et parmentier de pommes de terre</p>
+                            <p class="price">35€</p>
+                        </div>
+                        <a class="btn-produit">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </a>
+                    </div>
+                    <div class="produit">
+                        <div class="produit_desc">
+                            <h3>Pigeonneau d'Ile-et-Vilaine</h3>
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                            <p class="price">44€</p>
+                        </div>
+                        <a class="btn-produit">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+
+
+            <section class="section--color menu"> <!-- Menu du restaurant -->
+                <h2 class="section-title">
+                    Desserts
+                </h2>
+                <div class="underline"></div>
+                <article class="produits">
+                    <div class="produit">
+                        <div class="produit_desc">
+                            <h3>Pétales de violettes glacées</h3>
+                            <p>Et purée de noisettes</p>
+                            <p class="price">18€</p>
+                        </div>
+                        <a class="btn-produit">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </a>
+                    </div>
+                    <div class="produit">
+                        <div class="produit_desc">
+                            <h3>Fondant au chocolat</h3>
+                            <p>Revisité</p>
+                            <p class="price">22€</p>
+                        </div>
+                        <a class="btn-produit">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </a>
+                    </div>
+                    <div class="produit">
+                        <div class="produit_desc">
+                            <h3>Millefeuille croustillant</h3>
+                            <p>Myrtilles et pate d'amande</p>
+                            <p class="price">23€</p>
+                        </div>
+                        <a class="btn-produit">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="section section--color commander">
                 <button class="btn">
-                    Explorez nos restaurants
+                    Commander
                 </button>
             </section>
 
-            <section class="section how-it-works"> <!-- Fonctionnement de site -->
-                <h2 class="title">
-                    Fonctionnement
-                </h2>
-                <ul class="steps">
-                    <li class="step">
-                        <span class="number">1</span>
-                        <i class="picto fa-solid fa-mobile-screen-button"></i>
-                        Choisissez un restaurant
-                    </li>
-                    <li class="step">
-                        <span class="number">2</span>
-                        <i class="picto fa-solid fa-list-ul"></i>
-                        Composez votre menu
-                    </li>
-                    <li class="step">
-                        <span class="number">3</span>
-                        <i class="picto fa-solid fa-store"></i>
-                        Dégustez au restaurant
-                    </li>
-                </ul>
-            </section>
-
-            <section class="section"> <!-- Liste des restaurants -->
-                <h2 class="title">
-                    Restaurants
-                </h2>
-                <div class="restaurants">
-
-                    <article class="restaurant-prev"> <!-- Fiche d'un restaurant -->
-                        <a href="">
-                            <p class="chip">Nouveau</p>
-                            <img src="./images/restaurants/1-jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
-                            <div class="restaurant-desc">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
-                                <p class="fav"><i class="fa-regular fa-heart"></i></p>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="restaurant-prev">
-                        <a href="">
-                            <p class="chip">Nouveau</p>
-                            <img src="./images/restaurants/2-stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
-                            <div class="restaurant-desc">
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
-                                <p class="fav"><i class="fa-regular fa-heart"></i></p>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="restaurant-prev">
-                        <a href="">
-                            <img src="./images/restaurants/3-toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"/>
-                            <div class="restaurant-desc">
-                                <h3>À la française</h3>
-                                <p>Cité rouge</p>
-                                <p class="fav"><i class="fa-regular fa-heart"></i></p>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="restaurant-prev">
-                        <a href="">
-                            <img src="./images/restaurants/4-louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
-                            <div class="restaurant-desc">
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
-                                <p class="fav"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></p>
-                            </div>
-                        </a>
-                    </article>
-
-                </div>
-            </section>
 
         </main>
 

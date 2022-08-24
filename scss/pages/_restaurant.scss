@@ -1,0 +1,161 @@
+
+.container-menu {
+    @include desktop-only{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+.cover-image {
+    background-image: url('/images/restaurants/3-toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+    background-size : cover;
+    height: 400px;
+    position: relative;
+    padding:0px;
+    @include desktop-only{
+        width: 100%;
+    }
+    .background-title {
+        background-color: $color-neutral-light;
+        padding: 0px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 30px 30px 0 0;
+        .title {
+            margin-bottom: 0px;
+        }
+        .fav {
+            position: absolute;
+            right: 30px;
+            font-size: 25px;
+            cursor: pointer;
+            .selected {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                color: $color-secondary;
+                opacity: 0;
+            }
+            &:hover {
+                .selected {
+                    -webkit-animation: fav 300ms both;
+                            animation: fav 300ms both;
+                }
+            }
+        }
+    }
+}
+
+.menu {
+    padding: 1rem 2rem;
+    height: auto;
+    @include desktop-only{
+        width: 33%;
+    }
+    .section-title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .underline {
+        background: $color-tertiary;
+        width: 50px;
+        height: 5px;
+        margin: 5px 0 20px 0;
+    }
+
+    $num-prod: 3;
+    $anim-delay : 200ms;
+    .produits {
+        .produit {
+            display: flex;
+            flex-direction: row;
+            border-radius: 20px;
+            background-color: $color-white;
+            margin-bottom: 20px;
+            @include box-shadow;
+            @for $i from 1 through $num-prod {
+                &--#{$i} {
+                    -webkit-animation: bloc 1000ms both ease-out;
+                            animation: bloc 1000ms both ease-out;
+                    -webkit-animation-delay: $anim-delay * $i;
+                            animation-delay: $anim-delay * $i;
+                }
+            }
+            .produit_desc {
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                width:100%;
+                text-overflow: ellipsis;
+                .price {
+                    position: absolute;
+                    right: 15px;
+                }
+            }
+            .btn-produit {
+            //    display: none;
+                    display: block;
+                    background-color: $color-tertiary;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0 20px 20px 0;
+                    color: $color-white;
+                    font-size: 25px;
+                    overflow: hidden;
+                    width: 0px;
+            }
+            &:hover {
+                cursor: pointer;
+                .produit_desc {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
+                    p,h3 {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-right: 40px;
+                    }
+                    .price {
+                        margin-right: 0px;
+                    }
+                }
+                .btn-produit {
+                    transition: transform 330ms ease-in-out;
+                    -webkit-animation: check 300ms ease-in-out both;
+                            animation: check 300ms ease-in-out both;
+                    .fa-circle-check {
+                        -webkit-animation: checkbox 300ms ease-in-out both;
+                                animation: checkbox 300ms ease-in-out both;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.commander {
+    text-align: center;
+    padding-top: 30px;
+    @include desktop-only{
+        width: 100%;
+        padding-top: 60px;
+    }
+    .btn {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}

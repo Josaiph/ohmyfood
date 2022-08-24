@@ -6,9 +6,14 @@
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="public/css/main.min.css"/>
         <script src="https://kit.fontawesome.com/b711bdb4d4.js" crossorigin="anonymous"></script> <!-- Ajout de FontAwesome -->
-        <title>OhMyFood : Restaurants livrés chez vous</title>
+        <title>OhMyFood: Restaurants livrés à domicile</title>
     </head>
     <body>
+        <div class="load">
+            <div class="load__circle load__circle--1"></div>
+            <div class="load__circle load__circle--2"></div>
+            <div class="load__circle load__circle--3"></div>
+        </div>
 
         <header class="header"> <!-- bar de navigation -->
             <img src="./images/logo/ohmyfood.png" alt="logo OhMyFood" srcset="./images/logo/ohmyfood@2x.svg"/>
@@ -65,13 +70,13 @@
                 <div class="restaurants">
 
                     <article class="restaurant-prev"> <!-- Fiche d'un restaurant -->
-                        <a href="">
+                        <a href="./restaurant.html">
                             <p class="chip">Nouveau</p>
                             <img src="./images/restaurants/1-jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
                             <div class="restaurant-desc">
                                 <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
-                                <p class="fav"><i class="fa-regular fa-heart"></i></p>
+                                <p class="fav"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart selected"></i></p>
                             </div>
                         </a>
                     </article>
@@ -83,7 +88,7 @@
                             <div class="restaurant-desc">
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
-                                <p class="fav"><i class="fa-regular fa-heart"></i></p>
+                                <p class="fav"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart selected"></i></p>
                             </div>
                         </a>
                     </article>
@@ -94,7 +99,7 @@
                             <div class="restaurant-desc">
                                 <h3>À la française</h3>
                                 <p>Cité rouge</p>
-                                <p class="fav"><i class="fa-regular fa-heart"></i></p>
+                                <p class="fav"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart selected"></i></p>
                             </div>
                         </a>
                     </article>
@@ -105,7 +110,7 @@
                             <div class="restaurant-desc">
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
-                                <p class="fav"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></p>
+                                <p class="fav"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart selected"></i></p>
                             </div>
                         </a>
                     </article>
