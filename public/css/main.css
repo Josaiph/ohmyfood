@@ -852,6 +852,7 @@ footer.section .links .link a:hover .picto {
 
 .cover-image {
   background-size: cover;
+  background-position: center;
   height: 400px;
   position: relative;
   padding: 0px;
