@@ -881,7 +881,7 @@ footer.section .links .link a:hover .picto {
   padding: 0px;
   width: 100%;
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
