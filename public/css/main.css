@@ -484,10 +484,7 @@ li {
 }
 
 .section {
-  padding: 6rem 2rem;
-}
-.section + .section {
-  padding-bottom: 0px;
+  padding: 6rem;
 }
 .section--color {
   background: #f2f2f2;
