@@ -823,7 +823,6 @@ footer.section .links .link a:hover .picto {
   font-size: 25px;
   right: 15px;
   top: 15px;
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 .restaurants .restaurant-prev .restaurant-desc .fav .selected {
   position: absolute;
